@@ -170,7 +170,7 @@ if (WIN32)
 
   set(PLATFORM_DIR Windows)
   set(BUILD_PLATFORM WIN32)
-  set(BUILD_RESOURCES src/intensecoinwallet.rc)
+  set(BUILD_RESOURCES src/zvetacoinwallet.rc)
   set(QTMAIN Qt5::WinMain)
 
 elseif (UNIX)
