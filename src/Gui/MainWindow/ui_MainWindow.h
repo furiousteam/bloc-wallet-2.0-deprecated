@@ -653,8 +653,8 @@ public:
 #ifndef QT_NO_TOOLTIP
         m_importKeyAction->setToolTip(QApplication::translate("MainWindow", "Import key", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        m_communityForumAction->setText(QApplication::translate("MainWindow", "Join us on Slack", Q_NULLPTR));
-        m_reportIssueAction->setText(QApplication::translate("MainWindow", "Report an issue", Q_NULLPTR));
+        m_communityForumAction->setText(QApplication::translate("MainWindow", "Join us on Telegram", Q_NULLPTR));
+        m_reportIssueAction->setText(QApplication::translate("MainWindow", "BlockChain-Coin.net official website", Q_NULLPTR));
         m_resetAction->setText(QApplication::translate("MainWindow", "Reset wallet", Q_NULLPTR));
         m_saveKeysAction->setText(QApplication::translate("MainWindow", "Save wallet keys", Q_NULLPTR));
         m_exportKeyAction->setText(QApplication::translate("MainWindow", "Export key", Q_NULLPTR));
