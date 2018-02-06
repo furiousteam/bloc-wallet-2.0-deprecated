@@ -997,7 +997,7 @@
   </action>
   <action name="m_reportIssueAction">
    <property name="text">
-    <string>Report an issue</string>
+    <string>BlockChain-Coin.net official website</string>
    </property>
   </action>
   <action name="m_resetAction">
