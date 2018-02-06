@@ -620,7 +620,7 @@
             <enum>Qt::NoFocus</enum>
            </property>
            <property name="text">
-            <string>SEND INTENSECOINS</string>
+            <string>SEND BLOCKCHAIN-COINS</string>
            </property>
            <property name="checkable">
             <bool>true</bool>
