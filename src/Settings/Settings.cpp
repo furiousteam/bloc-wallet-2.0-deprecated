@@ -82,7 +82,7 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-  m_defaultPoolList << "45.32.171.89:4444";
+  m_defaultPoolList << "159.89.180.132:4444";
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();

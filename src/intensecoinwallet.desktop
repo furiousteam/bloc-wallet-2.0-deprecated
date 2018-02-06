@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Zvetacoin Wallet
-Comment=Zvetacoin wallet
-Exec=Zvetacoin %U
+Name=BlockChain-Coin Wallet
+Comment=BlockChain-Coi wallet
+Exec=BlockChain-Coi %U
 Terminal=false
 Type=Application
 Icon=intensecoin

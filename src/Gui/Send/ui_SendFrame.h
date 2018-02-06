@@ -152,12 +152,12 @@ public:
         m_feeSpin = new QDoubleSpinBox(m_sendFeeFrame);
         m_feeSpin->setObjectName(QStringLiteral("m_feeSpin"));
         m_feeSpin->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
-        m_feeSpin->setSuffix(QStringLiteral("BCN"));
-        m_feeSpin->setDecimals(8);
-        m_feeSpin->setMinimum(0.01);
+        m_feeSpin->setSuffix(QStringLiteral("BKC"));
+        m_feeSpin->setDecimals(9);
+        m_feeSpin->setMinimum(0.0001);
         m_feeSpin->setMaximum(1e+09);
-        m_feeSpin->setSingleStep(0.01);
-        m_feeSpin->setValue(0.01);
+        m_feeSpin->setSingleStep(0.0001);
+        m_feeSpin->setValue(0.0001);
 
         gridLayout_2->addWidget(m_feeSpin, 1, 0, 1, 1);
 
@@ -205,7 +205,7 @@ public:
         m_mixinSlider->setMaximumSize(QSize(16777215, 16777215));
         m_mixinSlider->setMaximum(50);
         m_mixinSlider->setPageStep(1);
-        m_mixinSlider->setValue(7);
+        m_mixinSlider->setValue(0);
         m_mixinSlider->setTracking(false);
         m_mixinSlider->setOrientation(Qt::Horizontal);
 
@@ -221,21 +221,18 @@ public:
         m_sendButton->setMinimumSize(QSize(218, 40));
         m_sendButton->setMaximumSize(QSize(218, 40));
         m_sendButton->setFocusPolicy(Qt::NoFocus);
-
         gridLayout->addWidget(m_sendButton, 0, 7, 2, 1);
+
 
         label_2 = new WalletGui::WalletNormalGrayTextLabel(m_mixinFrame);
         label_2->setObjectName(QStringLiteral("label_2"));
-
         gridLayout->addWidget(label_2, 0, 4, 2, 1);
 
         m_mixinTextLabel = new WalletGui::WalletNormalGrayTextLabel(m_mixinFrame);
         m_mixinTextLabel->setObjectName(QStringLiteral("m_mixinTextLabel"));
-
         gridLayout->addWidget(m_mixinTextLabel, 0, 0, 1, 1);
 
         horizontalSpacer_4 = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
         gridLayout->addItem(horizontalSpacer_4, 0, 6, 2, 1);
 
 
