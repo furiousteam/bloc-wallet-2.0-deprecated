@@ -992,7 +992,7 @@
   </action>
   <action name="m_communityForumAction">
    <property name="text">
-    <string>Join us on Slack</string>
+    <string>Join us on Telegram</string>
    </property>
   </action>
   <action name="m_reportIssueAction">
