@@ -60,8 +60,8 @@ namespace WalletGui {
 namespace {
 
 const int MAX_RECENT_WALLET_COUNT = 10;
-const char COMMUNITY_FORUM_URL[] = "";
-const char REPORT_ISSUE_URL[] = "";
+const char COMMUNITY_FORUM_URL[] = "http://blockchain-coin.net";
+const char REPORT_ISSUE_URL[] = "http://blockchain-coin.net";
 
 const char DONATION_URL_DONATION_TAG[] = "donation";
 const char DONATION_URL_LABEL_TAG[] = "label";
