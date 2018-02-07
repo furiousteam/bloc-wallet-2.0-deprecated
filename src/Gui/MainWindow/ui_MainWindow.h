@@ -637,7 +637,7 @@ public:
 #ifndef QT_NO_TOOLTIP
         m_changePasswordAction->setToolTip(QApplication::translate("MainWindow", "Change password", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        m_aboutIntensecoinAction->setText(QApplication::translate("MainWindow", "About Intensecoin", Q_NULLPTR));
+        m_aboutIntensecoinAction->setText(QApplication::translate("MainWindow", "About BlockChain-Coin", Q_NULLPTR));
         m_aboutQtAction->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
         m_backupWalletAction->setText(QApplication::translate("MainWindow", "Backup wallet", Q_NULLPTR));
         m_autostartAction->setText(QApplication::translate("MainWindow", "Start on system login", Q_NULLPTR));
