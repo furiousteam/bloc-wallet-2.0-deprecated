@@ -375,7 +375,7 @@ bool Settings::isNewsEnabled() const {
   }
 
   QJsonObject privacyParams = m_settings.value(OPTION_PRIVACY_PARAMS).toObject();
-  return privacyParams.contains(OPTION_PRIVACY_NEWS_ENABLED) ? privacyParams.value(OPTION_PRIVACY_NEWS_ENABLED).toBool() : false;
+  return privacyParams.contains(OPTION_PRIVACY_NEWS_ENABLED) ? privacyParams.value(OPTION_PRIVACY_NEWS_ENABLED).toBool() : true;
 }
 
 quint16 Settings::getLocalRpcPort() const {
