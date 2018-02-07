@@ -921,7 +921,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>About BlockChain-Coin</string>
+    <string>Intensecoin</string>
    </property>
   </action>
   <action name="m_aboutQtAction">
