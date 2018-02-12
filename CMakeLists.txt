@@ -238,4 +238,4 @@ endif (APPLE)
 qt5_use_modules(${PROJECT_NAME} Widgets Gui Network)
 
 add_subdirectory(cryptonote/external)
-#add_subdirectory(cryptonote/src)
+add_subdirectory(cryptonote/src)
