@@ -26,16 +26,21 @@ git submodule foreach git pull origin zvetachanges
 —-----
 STEPS:
 —-----
-1: Run This Command 
+0: Open /CmakeList.txt and comment -- ALREADY DONE IN THIS REPO
+#add_subdirectory(cryptonote/src)
+#add_subdirectory(tests)
 
+
+1: Run This Command 
 mkdir build
 cd build
-cmake -DSTATIC=1 -Wno-dev ^
+cmake -DPORTABLE=1 -Wno-dev ^
 -DCMAKE_PREFIX_PATH="C:\Qt\Qt5.10.0\5.10.0\msvc2015_64" ^
 -DBOOST_ROOT="C:\local\boost_1_64_0_64" ^
 -DBOOST_INCLUDEDIR="C:\local\boost_1_64_0_64\lib64-msvc-14.1" ^
 -DBOOST_LIBRARYDIR="C:\local\boost_1_64_0_64\libs" ^
 -G "Visual Studio 15 Win64" ..
+
 
 # Open Solution file in Build folder and Build Release.
 
