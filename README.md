@@ -23,6 +23,11 @@ git submodule foreach git pull origin zvetachanges
 
 #### Windows build
 ```
+—-----
+STEPS:
+—-----
+1: Run This Command 
+
 mkdir build
 cd build
 cmake -DSTATIC=1 -Wno-dev ^
@@ -32,22 +37,34 @@ cmake -DSTATIC=1 -Wno-dev ^
 -DBOOST_LIBRARYDIR="C:\local\boost_1_64_0_64\libs" ^
 -G "Visual Studio 15 Win64" ..
 
+# Open Solution file in Build folder and Build Release.
 
-—-----
-STEPS:
-—-----
-1: Run the above cmake build command
+
 *: Change Debug to Release from the dropdown below the Team-Tools menu
 2: Open project in Visual Studio
     A: Right Click on Rocksdb -> Properties->C/C++->Code Generation->Runtime Library to /MT — APPLY & SAVE
 3: Build External or RocksDB
 4: Build ALL_BUILD
+5: C:\Qt\Qt5.10.0\5.10.0\windeployqt yourcoin.exe 
 ```
 
 If you are building on an older processor without AVX support, add the following options to cmake:
 
 ```
 -DPORTABLE=1 -DWITH_AVX2=0
+```
+
+#### macOS build
+```
+rm -Rf build && mkdir build && cd build
+cmake -DSTATIC=1 \
+-DBOOST_ROOT=/usr/local/Cellar/boost/1.66.0 \
+-DBOOST_LIBRARYDIR=/usr/local/Cellar/boost/1.66.0/lib \
+-DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.10.0_1 .. && make
+```
+
+```
+/usr/local/Cellar/qt/5.10.0_1/macdeployqt yourcoin.app
 ```
 
 #### *nix build
