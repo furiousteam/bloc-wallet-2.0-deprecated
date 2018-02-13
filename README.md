@@ -50,7 +50,7 @@ cmake -DPORTABLE=1 -Wno-dev ^
     A: Right Click on Rocksdb -> Properties->C/C++->Code Generation->Runtime Library to /MT — APPLY & SAVE
 3: Build External or RocksDB
 4: Build ALL_BUILD
-5: C:\Qt\Qt5.10.0\5.10.0\windeployqt yourcoin.exe 
+5: C:\Qt\Qt5.10.0\5.10.0\msvc2015_64\bin\windeployqt yourcoin.exe 
 ```
 
 If you are building on an older processor without AVX support, add the following options to cmake:
