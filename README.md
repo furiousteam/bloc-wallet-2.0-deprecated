@@ -36,7 +36,7 @@ cmake -DSTATIC=1 -Wno-dev ^
 —-----
 STEPS:
 —-----
-1: Run the below cmake build command
+1: Run the above cmake build command
 *: Change Debug to Release from the dropdown below the Team-Tools menu
 2: Open project in Visual Studio
     A: Right Click on Rocksdb -> Properties->C/C++->Code Generation->Runtime Library to /MT — APPLY & SAVE
