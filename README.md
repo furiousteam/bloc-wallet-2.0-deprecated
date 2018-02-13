@@ -1,11 +1,5 @@
 Dependencies: boost >= 1.58, CMake >= 2.8.6, GCC >=4.7.3, Qt >=5.0
 
-* VISUAL STUDIO 2015
-* BOOST for Visual Studio: https://dl.bintray.com/boostorg/release/1.64.0/binaries/boost_1_64_0-msvc-14.1-64.exe
-* QT for Visual Studio:http://download.qt.io/official_releases/qt/5.10/5.10.0/qt-opensource-windows-x86-5.10.0.exe
-* MSBuild https://www.microsoft.com/en-us/download/details.aspx?id=48159
-* CMake https://cmake.org/install/
-
 **1. Clone wallet sources**
 
 ```
@@ -22,6 +16,12 @@ git submodule foreach git pull origin zvetachanges
 **3. Build**
 
 #### Windows build
+* VISUAL STUDIO 2015
+* BOOST for Visual Studio: https://dl.bintray.com/boostorg/release/1.64.0/binaries/boost_1_64_0-msvc-14.1-64.exe
+* QT for Visual Studio:http://download.qt.io/official_releases/qt/5.10/5.10.0/qt-opensource-windows-x86-5.10.0.exe
+* MSBuild https://www.microsoft.com/en-us/download/details.aspx?id=48159
+* CMake https://cmake.org/install/
+
 ```
 —-----
 STEPS:
@@ -56,6 +56,13 @@ If you are building on an older processor without AVX support, add the following
 
 #### macOS build
 ```
+# install & update xcode
+xcode-select --install
+# install brew
+brew install cmake
+brew install boost
+
+
 rm -Rf build && mkdir build && cd build
 cmake -DSTATIC=1 \
 -DBOOST_ROOT=/usr/local/Cellar/boost/1.66.0 \
