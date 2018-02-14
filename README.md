@@ -16,7 +16,7 @@ git submodule foreach git pull origin zvetachanges
 **3. Build**
 
 #### Windows build
-* VISUAL STUDIO 2015
+* VISUAL STUDIO 2017
 * BOOST for Visual Studio: https://dl.bintray.com/boostorg/release/1.64.0/binaries/boost_1_64_0-msvc-14.1-64.exe
 * QT for Visual Studio:http://download.qt.io/official_releases/qt/5.10/5.10.0/qt-opensource-windows-x86-5.10.0.exe
 * MSBuild https://www.microsoft.com/en-us/download/details.aspx?id=48159
