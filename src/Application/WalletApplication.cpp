@@ -60,7 +60,7 @@ namespace WalletGui {
 
 namespace {
 
-const char BYTECOIN_URI_SCHEME_NAME[] = "intensecoin";
+const char BYTECOIN_URI_SCHEME_NAME[] = "blockchain-coin";
 const QRegularExpression LOG_SPLASH_REG_EXP("\\[Core\\] Imported block with index");
 
 quint16 findPort() {
@@ -105,7 +105,7 @@ WalletApplication::WalletApplication(int& _argc, char** _argv) : QApplication(_a
   m_systemTrayIcon(new QSystemTrayIcon(this)), m_applicationEventHandler(new ApplicationEventHandler(this)),
   m_optimizationManager(nullptr), m_blogReader(new BlogReader(this)), m_mainWindow(nullptr), m_splash(nullptr),
   m_logWatcher(nullptr), m_isAboutToQuit(false) {
-  setApplicationName("intensecoinwallet");
+  setApplicationName("blockchain-coinwallet");
   setApplicationVersion(Settings::instance().getVersion());
   setQuitOnLastWindowClosed(false);
   setStyle(QStyleFactory::create("fusion"));
@@ -141,7 +141,7 @@ bool WalletApplication::init() {
   makeDataDir();
   WalletLogger::init(Settings::instance().getDataDir(), Settings::instance().hasDebugOption(), this);
   WalletLogger::info(tr("[Application] Initializing..."));
-  m_lockFile = new QLockFile(Settings::instance().getDataDir().absoluteFilePath("intensecoinwallet.lock"));
+  m_lockFile = new QLockFile(Settings::instance().getDataDir().absoluteFilePath("blockchain-coinwallet.lock"));
   QUrl paymentUrl = QUrl::fromUserInput(arguments().last());
   if (paymentUrl.scheme() != BYTECOIN_URI_SCHEME_NAME) {
     paymentUrl = QUrl();
@@ -263,9 +263,9 @@ bool WalletApplication::initCryptoNoteAdapter() {
       okButton->setText(QObject::tr("Ok"));
       dlg.addButton(okButton, QMessageBox::AcceptRole);
       dlg.setText(QObject::tr("The database is currently used by another application or service.\n"
-      "If you have intensecoind with non-default RPC port, you should terminate it and relaunch IntensecoinWallet\n"
+      "If you have blockchaincoind with non-default RPC port, you should terminate it and relaunch Blockchain-coinWallet\n"
       "or\n"
-      "Set the Local deamon required port in IntensecoinWallet Menu/Preferences/Connection settings."));
+      "Set the Local deamon required port in Blockchain-coinWallet Menu/Preferences/Connection settings."));
 	  if (m_splash != nullptr)
 		  m_splash->hide();
       dlg.exec();
