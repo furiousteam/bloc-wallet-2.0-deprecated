@@ -493,8 +493,8 @@ bool Settings::isStartOnLoginEnabled() const {
   res = QFile::exists(autorunFilePath);
 #elif defined(Q_OS_WIN)
   QSettings autorunSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
-  res = autorunSettings.contains("IntensecoinWallet") &&
-    !QDir::fromNativeSeparators(autorunSettings.value("IntensecoinWallet").toString().split(' ')[0]).compare(QCoreApplication::applicationFilePath());
+  res = autorunSettings.contains("Blockchain-coinWallet") &&
+    !QDir::fromNativeSeparators(autorunSettings.value("Blockchain-coinWallet").toString().split(' ')[0]).compare(QCoreApplication::applicationFilePath());
 #endif
   return res;
 }
@@ -688,7 +688,7 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
     if (_enable) {
       autorunFile.write("[Desktop Entry]\n");
       autorunFile.write("Type=Application\n");
-      autorunFile.write("Name=Intensecoin Wallet\n");
+      autorunFile.write("Name=Blockchain-coin Wallet\n");
       autorunFile.write(QString("Exec=%1 --minimized\n").arg(QCoreApplication::applicationFilePath()).toLocal8Bit());
       autorunFile.write("Terminal=false\n");
       autorunFile.write("Hidden=false\n");
@@ -700,9 +700,9 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
     QSettings autorunSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
     if (_enable) {
       QString appPath = QString("%1 --minimized").arg(QDir::toNativeSeparators(QCoreApplication::applicationFilePath()));
-      autorunSettings.setValue("IntensecoinWallet", appPath);
+      autorunSettings.setValue("Blockchain-coinWallet", appPath);
     } else {
-      autorunSettings.remove("IntensecoinWallet");
+      autorunSettings.remove("Blockchain-coinWallet");
     }
 #endif
   }
