@@ -107,7 +107,7 @@ void Settings::setCommandLineParser(CommandLineParser* _cmdLineParser) {
 }
 
 void Settings::init() {
-  QFile cfgFile(getDataDir().absoluteFilePath("intensecoinwallet.cfg"));
+  QFile cfgFile(getDataDir().absoluteFilePath("blockchain-coinwallet.cfg"));
   if (cfgFile.open(QIODevice::ReadOnly)) {
     m_settings = QJsonDocument::fromJson(cfgFile.readAll()).object();
     cfgFile.close();
@@ -471,7 +471,7 @@ bool Settings::isStartOnLoginEnabled() const {
     return false;
   }
 
-  QString autorunFilePath = autorunDir.absoluteFilePath("intensecoinwallet.plist");
+  QString autorunFilePath = autorunDir.absoluteFilePath("blockchain-coinwallet.plist");
   if (!QFile::exists(autorunFilePath)) {
     return false;
   }
@@ -489,7 +489,7 @@ bool Settings::isStartOnLoginEnabled() const {
     return false;
   }
 
-  QString autorunFilePath = autorunDir.absoluteFilePath("intensecoinwallet.desktop");
+  QString autorunFilePath = autorunDir.absoluteFilePath("blockchain-coinwallet.desktop");
   res = QFile::exists(autorunFilePath);
 #elif defined(Q_OS_WIN)
   QSettings autorunSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
@@ -657,10 +657,10 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
       return;
     }
 
-    QString autorunFilePath = autorunDir.absoluteFilePath("intensecoinwallet.plist");
+    QString autorunFilePath = autorunDir.absoluteFilePath("blockchain-coinwallet.plist");
     QSettings autorunSettings(autorunFilePath, QSettings::NativeFormat);
     autorunSettings.remove("Program");
-    autorunSettings.setValue("Label", "org.intensecoin.intensecoinwallet");
+    autorunSettings.setValue("Label", "org.blockchain-coin.blockchain-coinwallet");
     autorunSettings.setValue("ProgramArguments", QVariantList() << QCoreApplication::applicationFilePath() << "--minimized");
     autorunSettings.setValue("RunAtLoad", _enable);
     autorunSettings.setValue("ProcessType", "InterActive");
@@ -679,7 +679,7 @@ void Settings::setStartOnLoginEnabled(bool _enable) {
       return;
     }
 
-    QString autorunFilePath = autorunDir.absoluteFilePath("intensecoinwallet.desktop");
+    QString autorunFilePath = autorunDir.absoluteFilePath("blockchain-coinwallet.desktop");
     QFile autorunFile(autorunFilePath);
     if (!autorunFile.open(QFile::WriteOnly | QFile::Truncate)) {
       return;
@@ -937,19 +937,19 @@ void Settings::removeObserver(ISettingsObserver* _settingsObserver) {
 #ifdef Q_OS_WIN
 void Settings::setUrlHandler() {
   QWriteLocker lock(&m_lock);
-  QSettings protocolSettings("HKEY_CURRENT_USER\\Software\\Classes\\intensecoin", QSettings::NativeFormat);
-  protocolSettings.setValue(".", "URL:intensecoin");
+  QSettings protocolSettings("HKEY_CURRENT_USER\\Software\\Classes\\blockchain-coin", QSettings::NativeFormat);
+  protocolSettings.setValue(".", "URL:blockchain-coin");
   protocolSettings.setValue("URL Protocol", "");
-  QSettings iconSettings("HKEY_CURRENT_USER\\Software\\Classes\\intensecoin\\DefaultIcon", QSettings::NativeFormat);
+  QSettings iconSettings("HKEY_CURRENT_USER\\Software\\Classes\\blockchain-coin\\DefaultIcon", QSettings::NativeFormat);
   iconSettings.setValue(".", QDir::toNativeSeparators(QCoreApplication::applicationFilePath()));
-  QSettings openSettings("HKEY_CURRENT_USER\\Software\\Classes\\intensecoin\\shell\\open\\command", QSettings::NativeFormat);
+  QSettings openSettings("HKEY_CURRENT_USER\\Software\\Classes\\blockchain-coin\\shell\\open\\command", QSettings::NativeFormat);
   QString commandString("\"%1\" \"%2\"");
   openSettings.setValue(".", commandString.arg(QDir::toNativeSeparators(QCoreApplication::applicationFilePath())).arg("%1"));
 }
 #endif
 
 void Settings::saveSettings() const {
-  QFile cfgFile(QDir(m_cmdLineParser->getDataDir()).absoluteFilePath("intensecoinwallet.cfg"));
+  QFile cfgFile(QDir(m_cmdLineParser->getDataDir()).absoluteFilePath("blockchain-coinwallet.cfg"));
   if (cfgFile.open(QIODevice::WriteOnly | QIODevice::Truncate)) {
     QJsonDocument cfg_doc(m_settings);
     cfgFile.write(cfg_doc.toJson());
