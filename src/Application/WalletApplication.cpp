@@ -153,9 +153,9 @@ bool WalletApplication::init() {
   }
 #endif
   if (!m_lockFile->tryLock()) {
-    WalletLogger::warning(tr("[Application] Intensecoin wallet already running"));
+    WalletLogger::warning(tr("[Application] Blockchain-Coin wallet already running"));
     if (!paymentUrl.isValid()) {
-      QMessageBox::warning(nullptr, QObject::tr("Fail"), "Intensecoin wallet already running");
+      QMessageBox::warning(nullptr, QObject::tr("Fail"), "Blockchain-Coin wallet already running");
     }
 
     return false;
