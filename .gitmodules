@@ -1,3 +1,4 @@
 [submodule "cryptonote"]
 	path = cryptonote
 	url = https://github.com/furiousteam/blockchain-coin.git
+	branch = ASIC-READY

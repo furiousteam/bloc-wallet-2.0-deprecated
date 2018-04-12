@@ -83,18 +83,13 @@ file(GLOB_RECURSE CRYPTONOTE_SOURCES
   cryptonote/src/crypto/crypto-ops.c
   cryptonote/src/crypto/crypto.cpp
   cryptonote/src/crypto/groestl.c
-  cryptonote/src/crypto/hash-extra-blake.c
-  cryptonote/src/crypto/hash-extra-groestl.c
-  cryptonote/src/crypto/hash-extra-jh.c
-  cryptonote/src/crypto/hash-extra-skein.c
   cryptonote/src/crypto/hash.c
   cryptonote/src/crypto/jh.c
   cryptonote/src/crypto/keccak.c
-  cryptonote/src/crypto/oaes_lib.c
   cryptonote/src/crypto/random.c
   cryptonote/src/crypto/skein.c
-  cryptonote/src/crypto/slow-hash.c
-  cryptonote/src/crypto/slow-hash.cpp
+  cryptonote/src/crypto/cn_slow_hash_hard_intel.cpp
+  cryptonote/src/crypto/cn_slow_hash_soft.cpp
   cryptonote/src/crypto/tree-hash.c
   cryptonote/src/CryptoNoteCore/*.cpp
   cryptonote/src/CryptoNoteProtocol/*.cpp

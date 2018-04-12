@@ -25,10 +25,10 @@
 namespace WalletGui {
 
 namespace  {
-  void miningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_context& _context) {
+  void miningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_pow_hash& _context) {
     _localJob.blob.replace(39, sizeof(_localNonce), reinterpret_cast<char*>(&_localNonce), sizeof(_localNonce));
     std::memset(&_hash, 0, sizeof(_hash));
-    Crypto::cn_slow_hash(_context, _localJob.blob.data(), _localJob.blob.size(), _hash);
+	_context.hash(_localJob.blob.data(), _localJob.blob.size(), reinterpret_cast<char *>(&_hash));
   }
 }
 
@@ -93,7 +93,7 @@ void Worker::run() {
   Job localJob;
   quint32 localNonce;
   Crypto::Hash hash;
-  Crypto::cn_context context;
+  Crypto::cn_pow_hash context;
   while (!m_isStopped) {
     bool alternateObserverExists = !m_alternateJob.jobId.isEmpty();
     if (m_alternateProbability == 0 || !alternateObserverExists) {
@@ -106,7 +106,7 @@ void Worker::run() {
   }
 }
 
-void Worker::mainJobMiningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_context& _context) {
+void Worker::mainJobMiningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_pow_hash& _context) {
   {
     QReadLocker lock(&m_mainJobLock);
     if (m_mainJob.jobId.isEmpty()) {
@@ -128,7 +128,7 @@ void Worker::mainJobMiningRound(Job& _localJob, quint32& _localNonce, Crypto::Ha
   }
 }
 
-void Worker::alternateJobMiningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_context& _context) {
+void Worker::alternateJobMiningRound(Job& _localJob, quint32& _localNonce, Crypto::Hash& _hash, Crypto::cn_pow_hash& _context) {
   {
     QReadLocker lock(&m_alternateJobLock);
     if (m_alternateJob.jobId.isEmpty()) {
