@@ -44,10 +44,12 @@ namespace  {
 const char MINING_FRAME_STYLE_SHEET_TEMPLATE[] =
   "* {"
     "font-family: %fontFamily%;"
+	"color: #ffffff;"
+	"background-color: #031b46;"
   "}"
 
   "WalletGui--MiningFrame {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
   "}"
 
   "WalletGui--MiningFrame #m_miningManageFrame {"
@@ -57,7 +59,7 @@ const char MINING_FRAME_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--MiningFrame #m_miningManageFrame #m_cpuCoresCombo {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "min-width: 40px;"
     "max-width: 40px;"
   "}"

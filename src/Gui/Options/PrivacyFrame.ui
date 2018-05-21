@@ -71,14 +71,14 @@
       <item>
        <widget class="QCheckBox" name="m_newsCheck">
         <property name="text">
-         <string>I want to see BlockChain-Coin News feeds</string>
+         <string>I want to see BLOC News feeds</string>
         </property>
        </widget>
       </item>
       <item alignment="Qt::AlignTop">
        <widget class="WalletGui::WalletSmallGrayTextLabel" name="m_embeddedHelperLabel">
         <property name="text">
-         <string>Checking this box will result in updated Overview screen. It will now show you the latest posts of BlockChain-Coin Blog providing you with fresh BlockChain-Coin news.</string>
+         <string>Checking this box will result in updated Overview screen. It will now show you the latest posts of BLOC Blog providing you with fresh BLOC news.</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>

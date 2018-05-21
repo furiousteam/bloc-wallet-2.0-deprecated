@@ -41,7 +41,7 @@ const char WALLET_NAVIGATION_BUTTON_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--WalletNavigationButton:hover {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "color: %fontColorBlueHover%;"
   "}"
 

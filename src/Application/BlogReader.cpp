@@ -58,7 +58,7 @@ BlogReader::~BlogReader() {
 }
 
 QString BlogReader::getName() const {
-  return tr("Blockchain-coin.net News:");
+  return tr("BLOC.MONEY NEWS:");
 }
 
 QPixmap BlogReader::getIcon() const {

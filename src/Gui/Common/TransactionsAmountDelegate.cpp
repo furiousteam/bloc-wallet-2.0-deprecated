@@ -34,8 +34,8 @@ const int AMOUNT_DECIMAL_COUNT = 3;
 TransactionsAmountDelegate::TransactionsAmountDelegate(bool _hideLongAmounts, QObject* _parent) : QStyledItemDelegate(_parent),
   m_hideLongAmounts(_hideLongAmounts), m_amountGradient(0, 0, 1, 0) {
   m_amountGradient.setCoordinateMode(QLinearGradient::ObjectBoundingMode);
-  m_amountGradient.setColorAt(0, Qt::black);
-  m_amountGradient.setColorAt(0.7, Qt::black);
+  m_amountGradient.setColorAt(0, Qt::white);
+  m_amountGradient.setColorAt(0.7, Qt::white);
   m_amountGradient.setColorAt(1, Settings::instance().getCurrentStyle().backgroundColorAlternate());
 }
 

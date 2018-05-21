@@ -87,8 +87,8 @@ public:
     void retranslateUi(QFrame *PrivacyFrame)
     {
         PrivacyFrame->setWindowTitle(QApplication::translate("PrivacyFrame", "Frame", 0));
-        m_newsCheck->setText(QApplication::translate("PrivacyFrame", "I want to see BlockChain-Coin Blog feeds", 0));
-        m_embeddedHelperLabel->setText(QApplication::translate("PrivacyFrame", "Checking this box will result in updated Overview screen. It will now show you the latest posts of BlockChain-Coin Blog providing you with fresh BlockChain-Coin news.", 0));
+        m_newsCheck->setText(QApplication::translate("PrivacyFrame", "I want to see BLOC Blog feeds", 0));
+        m_embeddedHelperLabel->setText(QApplication::translate("PrivacyFrame", "Checking this box will result in updated Overview screen. It will now show you the latest posts of BLOC Blog providing you with fresh BLOC news.", 0));
     } // retranslateUi
 
 };

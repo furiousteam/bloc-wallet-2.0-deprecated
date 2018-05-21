@@ -98,13 +98,13 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="splash">images/splash.png</file>
-        <file alias="intensecoin_lin">images/blockchain-coin.png</file>
+        <file alias="intensecoin_lin">images/bloc.png</file>
         <file alias="add_address_helper">images/add_address_helper.png</file>
-        <file alias="intensecoin_mac">images/blockchain-coin.icns</file>
-        <file alias="intensecoin_win">images/blockchain-coin.png</file>
+        <file alias="intensecoin_mac">images/bloc.icns</file>
+        <file alias="intensecoin_win">images/bloc.png</file>
     </qresource>
     <qresource prefix="/style">
-        <file alias="qss">blockchain-coin.qss</file>
+        <file alias="qss">bloc.qss</file>
     </qresource>
     <qresource prefix="/font">
         <file alias="Bold">font/OpenSans-Bold.ttf</file>

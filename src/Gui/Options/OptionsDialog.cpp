@@ -38,11 +38,12 @@ const char OPTIONS_DIALOG_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--OptionsDialog > #m_buttonFrame {"
-    "background: #ffffff;"
+    "background: #031b46;"
   "}"
 
   "WalletGui--OptionsDialog > #m_buttonFrame > #m_warningLabel {"
     "font-size: %fontSizeLarge%;"
+   "color: #FFFFFF;"
     "font-weight: bold;"
   "}"
 
@@ -62,6 +63,7 @@ const char OPTIONS_DIALOG_STYLE_SHEET_TEMPLATE[] =
 
   "WalletGui--OptionsDialog > #m_optionsTabWidget QTabBar::tab {"
     "font-size: %fontSizeLarge%;"
+   "color: #FFFFFF;"
     "font-weight: bold;"
     "min-width: 165px;"
     "max-width: 165px;"
@@ -75,9 +77,9 @@ const char OPTIONS_DIALOG_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--OptionsDialog > #m_optionsTabWidget QTabBar::tab:selected {"
-    "background: #ffffff;"
+    "background: #031b46;"
     "border: 1px solid %borderColorDark%;"
-    "border-bottom: 1px solid #ffffff;"
+    "border-bottom: 1px solid #031b46;"
   "}"
 
   "WalletGui--OptionsDialog > #m_optionsTabWidget QTabBar::tab:!selected {"

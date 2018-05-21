@@ -28,7 +28,7 @@ QString LightStyle::statusBarBackgroundColor() const {
 }
 
 QString LightStyle::statusBarFontColor() const {
-  return "#000000";
+  return "#FFFFFF";
 }
 
 QString LightStyle::headerBackgroundColor() const {
@@ -40,11 +40,11 @@ QString LightStyle::headerBorderColor() const {
 }
 
 QString LightStyle::addressFontColor() const {
-  return "#000000";
+  return "#FFFFFF";
 }
 
 QString LightStyle::balanceFontColor() const {
-  return "#000000";
+  return "#FFFFFF";
 }
 
 QString LightStyle::toolButtonBackgroundColorNormal() const {
@@ -60,7 +60,7 @@ QString LightStyle::toolButtonBackgroundColorPressed() const {
 }
 
 QString LightStyle::toolButtonFontColorNormal() const {
-  return "#000000";
+  return "#FFFFFF";
 }
 
 QString LightStyle::toolButtonFontColorDisabled() const {

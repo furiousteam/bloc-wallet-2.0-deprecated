@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'MainWindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.8.0
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -63,13 +63,11 @@ public:
     QAction *m_resetAction;
     QAction *m_saveKeysAction;
     QAction *m_exportKeyAction;
-	QAction *m_exportPrivateKeyAction;
     QAction *m_removePendingTxAction;
     QWidget *centralwidget;
     QVBoxLayout *verticalLayout_2;
     QFrame *m_headerFrame;
     QHBoxLayout *horizontalLayout_3;
-    QSpacerItem *horizontalSpacer_2;
     QLabel *m_logoLabel;
     QSpacerItem *horizontalSpacer_5;
     WalletGui::WalletSmallGrayTextLabel *m_noWalletLabel;
@@ -196,13 +194,77 @@ public:
         m_saveKeysAction->setObjectName(QStringLiteral("m_saveKeysAction"));
         m_exportKeyAction = new QAction(MainWindow);
         m_exportKeyAction->setObjectName(QStringLiteral("m_exportKeyAction"));
-		m_exportPrivateKeyAction = new QAction(MainWindow);
-		m_exportPrivateKeyAction->setObjectName(QStringLiteral("m_exportPrivateKeyAction"));
         m_removePendingTxAction = new QAction(MainWindow);
         m_removePendingTxAction->setObjectName(QStringLiteral("m_removePendingTxAction"));
         m_removePendingTxAction->setCheckable(false);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        QPalette palette;
+        QBrush brush(QColor(0, 0, 0, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        QBrush brush1(QColor(236, 88, 236, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Button, brush1);
+        QBrush brush2(QColor(255, 195, 255, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Light, brush2);
+        QBrush brush3(QColor(245, 141, 245, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush3);
+        QBrush brush4(QColor(118, 44, 118, 255));
+        brush4.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Dark, brush4);
+        QBrush brush5(QColor(157, 59, 157, 255));
+        brush5.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Active, QPalette::Text, brush);
+        QBrush brush6(QColor(255, 255, 255, 255));
+        brush6.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        QBrush brush7(QColor(245, 171, 245, 255));
+        brush7.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::AlternateBase, brush7);
+        QBrush brush8(QColor(255, 255, 220, 255));
+        brush8.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Inactive, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Inactive, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush6);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush7);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::WindowText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Button, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Light, brush2);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Dark, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Mid, brush5);
+        palette.setBrush(QPalette::Disabled, QPalette::Text, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        centralwidget->setPalette(palette);
+        centralwidget->setAutoFillBackground(true);
         verticalLayout_2 = new QVBoxLayout(centralwidget);
         verticalLayout_2->setSpacing(0);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
@@ -212,17 +274,73 @@ public:
         m_headerFrame->setMinimumSize(QSize(0, 116));
         m_headerFrame->setMaximumSize(QSize(16777215, 116));
         m_headerFrame->setFrameShape(QFrame::NoFrame);
-        m_headerFrame->setFrameShadow(QFrame::Raised);
+        m_headerFrame->setFrameShadow(QFrame::Plain);
+        m_headerFrame->setLineWidth(0);
         horizontalLayout_3 = new QHBoxLayout(m_headerFrame);
         horizontalLayout_3->setSpacing(0);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(0, 0, 25, 0);
-        horizontalSpacer_2 = new QSpacerItem(30, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer_2);
-
         m_logoLabel = new QLabel(m_headerFrame);
         m_logoLabel->setObjectName(QStringLiteral("m_logoLabel"));
+        QPalette palette1;
+        palette1.setBrush(QPalette::Active, QPalette::WindowText, brush6);
+        QBrush brush9(QColor(4, 7, 39, 255));
+        brush9.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Button, brush9);
+        QBrush brush10(QColor(6, 10, 58, 255));
+        brush10.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Light, brush10);
+        QBrush brush11(QColor(5, 8, 48, 255));
+        brush11.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Midlight, brush11);
+        QBrush brush12(QColor(2, 3, 19, 255));
+        brush12.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Dark, brush12);
+        QBrush brush13(QColor(2, 4, 26, 255));
+        brush13.setStyle(Qt::SolidPattern);
+        palette1.setBrush(QPalette::Active, QPalette::Mid, brush13);
+        palette1.setBrush(QPalette::Active, QPalette::Text, brush6);
+        palette1.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette1.setBrush(QPalette::Active, QPalette::ButtonText, brush6);
+        palette1.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Active, QPalette::Window, brush9);
+        palette1.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        palette1.setBrush(QPalette::Active, QPalette::AlternateBase, brush12);
+        palette1.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
+        palette1.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::WindowText, brush6);
+        palette1.setBrush(QPalette::Inactive, QPalette::Button, brush9);
+        palette1.setBrush(QPalette::Inactive, QPalette::Light, brush10);
+        palette1.setBrush(QPalette::Inactive, QPalette::Midlight, brush11);
+        palette1.setBrush(QPalette::Inactive, QPalette::Dark, brush12);
+        palette1.setBrush(QPalette::Inactive, QPalette::Mid, brush13);
+        palette1.setBrush(QPalette::Inactive, QPalette::Text, brush6);
+        palette1.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette1.setBrush(QPalette::Inactive, QPalette::ButtonText, brush6);
+        palette1.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::Window, brush9);
+        palette1.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette1.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush12);
+        palette1.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette1.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::WindowText, brush12);
+        palette1.setBrush(QPalette::Disabled, QPalette::Button, brush9);
+        palette1.setBrush(QPalette::Disabled, QPalette::Light, brush10);
+        palette1.setBrush(QPalette::Disabled, QPalette::Midlight, brush11);
+        palette1.setBrush(QPalette::Disabled, QPalette::Dark, brush12);
+        palette1.setBrush(QPalette::Disabled, QPalette::Mid, brush13);
+        palette1.setBrush(QPalette::Disabled, QPalette::Text, brush12);
+        palette1.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette1.setBrush(QPalette::Disabled, QPalette::ButtonText, brush12);
+        palette1.setBrush(QPalette::Disabled, QPalette::Base, brush9);
+        palette1.setBrush(QPalette::Disabled, QPalette::Window, brush9);
+        palette1.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette1.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush9);
+        palette1.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette1.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        m_logoLabel->setPalette(palette1);
+        m_logoLabel->setAutoFillBackground(true);
+        m_logoLabel->setLineWidth(0);
 
         horizontalLayout_3->addWidget(m_logoLabel);
 
@@ -410,6 +528,54 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         m_toolFrame = new QFrame(centralwidget);
         m_toolFrame->setObjectName(QStringLiteral("m_toolFrame"));
+        QPalette palette2;
+        palette2.setBrush(QPalette::Active, QPalette::WindowText, brush6);
+        palette2.setBrush(QPalette::Active, QPalette::Button, brush9);
+        palette2.setBrush(QPalette::Active, QPalette::Light, brush10);
+        palette2.setBrush(QPalette::Active, QPalette::Midlight, brush11);
+        palette2.setBrush(QPalette::Active, QPalette::Dark, brush12);
+        palette2.setBrush(QPalette::Active, QPalette::Mid, brush13);
+        palette2.setBrush(QPalette::Active, QPalette::Text, brush6);
+        palette2.setBrush(QPalette::Active, QPalette::BrightText, brush6);
+        palette2.setBrush(QPalette::Active, QPalette::ButtonText, brush6);
+        palette2.setBrush(QPalette::Active, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Active, QPalette::Window, brush9);
+        palette2.setBrush(QPalette::Active, QPalette::Shadow, brush);
+        palette2.setBrush(QPalette::Active, QPalette::AlternateBase, brush12);
+        palette2.setBrush(QPalette::Active, QPalette::ToolTipBase, brush8);
+        palette2.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::WindowText, brush6);
+        palette2.setBrush(QPalette::Inactive, QPalette::Button, brush9);
+        palette2.setBrush(QPalette::Inactive, QPalette::Light, brush10);
+        palette2.setBrush(QPalette::Inactive, QPalette::Midlight, brush11);
+        palette2.setBrush(QPalette::Inactive, QPalette::Dark, brush12);
+        palette2.setBrush(QPalette::Inactive, QPalette::Mid, brush13);
+        palette2.setBrush(QPalette::Inactive, QPalette::Text, brush6);
+        palette2.setBrush(QPalette::Inactive, QPalette::BrightText, brush6);
+        palette2.setBrush(QPalette::Inactive, QPalette::ButtonText, brush6);
+        palette2.setBrush(QPalette::Inactive, QPalette::Base, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::Window, brush9);
+        palette2.setBrush(QPalette::Inactive, QPalette::Shadow, brush);
+        palette2.setBrush(QPalette::Inactive, QPalette::AlternateBase, brush12);
+        palette2.setBrush(QPalette::Inactive, QPalette::ToolTipBase, brush8);
+        palette2.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::WindowText, brush12);
+        palette2.setBrush(QPalette::Disabled, QPalette::Button, brush9);
+        palette2.setBrush(QPalette::Disabled, QPalette::Light, brush10);
+        palette2.setBrush(QPalette::Disabled, QPalette::Midlight, brush11);
+        palette2.setBrush(QPalette::Disabled, QPalette::Dark, brush12);
+        palette2.setBrush(QPalette::Disabled, QPalette::Mid, brush13);
+        palette2.setBrush(QPalette::Disabled, QPalette::Text, brush12);
+        palette2.setBrush(QPalette::Disabled, QPalette::BrightText, brush6);
+        palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush12);
+        palette2.setBrush(QPalette::Disabled, QPalette::Base, brush9);
+        palette2.setBrush(QPalette::Disabled, QPalette::Window, brush9);
+        palette2.setBrush(QPalette::Disabled, QPalette::Shadow, brush);
+        palette2.setBrush(QPalette::Disabled, QPalette::AlternateBase, brush9);
+        palette2.setBrush(QPalette::Disabled, QPalette::ToolTipBase, brush8);
+        palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        m_toolFrame->setPalette(palette2);
+        m_toolFrame->setAutoFillBackground(true);
         m_toolFrame->setFrameShape(QFrame::NoFrame);
         m_toolFrame->setFrameShadow(QFrame::Plain);
         m_toolFrame->setLineWidth(0);
@@ -430,6 +596,7 @@ public:
         m_overviewButton->setSizePolicy(sizePolicy2);
         m_overviewButton->setFocusPolicy(Qt::NoFocus);
         m_overviewButton->setCheckable(true);
+        m_overviewButton->setChecked(false);
 
         verticalLayout->addWidget(m_overviewButton);
 
@@ -549,7 +716,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1273, 21));
+        menubar->setGeometry(QRect(0, 0, 1273, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuSettings = new QMenu(menubar);
@@ -573,13 +740,12 @@ public:
         menuFile->addAction(m_saveKeysAction);
         menuFile->addAction(m_resetAction);
         menuFile->addAction(m_importKeyAction);
-		menuFile->addAction(m_exportPrivateKeyAction);
         menuFile->addAction(m_exportKeyAction);
         menuFile->addAction(m_exportTrackingKeyAction);
         menuFile->addAction(m_exitAction);
         menuSettings->addAction(m_encryptWalletAction);
         menuSettings->addAction(m_changePasswordAction);
-        //menuSettings->addAction(m_removePendingTxAction);
+        menuSettings->addAction(m_removePendingTxAction);
         menuSettings->addSeparator();
         menuSettings->addAction(m_autostartAction);
         menuSettings->addAction(m_minimizeToTrayAction);
@@ -597,7 +763,6 @@ public:
         QObject::connect(m_openWalletAction, SIGNAL(triggered()), MainWindow, SLOT(openWallet()));
         QObject::connect(m_encryptWalletAction, SIGNAL(triggered()), MainWindow, SLOT(encryptWallet()));
         QObject::connect(m_changePasswordAction, SIGNAL(triggered()), MainWindow, SLOT(encryptWallet()));
-		QObject::connect(m_removePendingTxAction, SIGNAL(triggered()), MainWindow, SLOT(removePendingTx()));
         QObject::connect(m_aboutQtAction, SIGNAL(triggered()), MainWindow, SLOT(aboutQt()));
         QObject::connect(m_backupWalletAction, SIGNAL(triggered()), MainWindow, SLOT(backupWallet()));
         QObject::connect(m_aboutIntensecoinAction, SIGNAL(triggered()), MainWindow, SLOT(about()));
@@ -620,79 +785,78 @@ public:
         QObject::connect(m_resetAction, SIGNAL(triggered()), MainWindow, SLOT(resetWallet()));
         QObject::connect(m_saveKeysAction, SIGNAL(triggered()), MainWindow, SLOT(saveWalletKeys()));
         QObject::connect(m_exportKeyAction, SIGNAL(triggered()), MainWindow, SLOT(exportKey()));
-		QObject::connect(m_exportPrivateKeyAction, SIGNAL(triggered()), MainWindow, SLOT(exportPrivateKeys()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
-        m_exitAction->setText(QApplication::translate("MainWindow", "Exit", Q_NULLPTR));
-        m_exitAction->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", Q_NULLPTR));
-        m_createWalletAction->setText(QApplication::translate("MainWindow", "Create wallet", Q_NULLPTR));
-        m_openWalletAction->setText(QApplication::translate("MainWindow", "Open wallet", Q_NULLPTR));
-        m_encryptWalletAction->setText(QApplication::translate("MainWindow", "Encrypt wallet", Q_NULLPTR));
-        m_changePasswordAction->setText(QApplication::translate("MainWindow", "Change password", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        m_exitAction->setText(QApplication::translate("MainWindow", "Exit", nullptr));
+#ifndef QT_NO_SHORTCUT
+        m_exitAction->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", nullptr));
+#endif // QT_NO_SHORTCUT
+        m_createWalletAction->setText(QApplication::translate("MainWindow", "Create wallet", nullptr));
+        m_openWalletAction->setText(QApplication::translate("MainWindow", "Open wallet", nullptr));
+        m_encryptWalletAction->setText(QApplication::translate("MainWindow", "Encrypt wallet", nullptr));
+        m_changePasswordAction->setText(QApplication::translate("MainWindow", "Change password", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_changePasswordAction->setToolTip(QApplication::translate("MainWindow", "Change password", Q_NULLPTR));
+        m_changePasswordAction->setToolTip(QApplication::translate("MainWindow", "Change password", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_aboutIntensecoinAction->setText(QApplication::translate("MainWindow", "About BlockChain-Coin", Q_NULLPTR));
-        m_aboutQtAction->setText(QApplication::translate("MainWindow", "About Qt", Q_NULLPTR));
-        m_backupWalletAction->setText(QApplication::translate("MainWindow", "Backup wallet", Q_NULLPTR));
-        m_autostartAction->setText(QApplication::translate("MainWindow", "Start on system login", Q_NULLPTR));
-        m_minimizeToTrayAction->setText(QApplication::translate("MainWindow", "Minimize to tray", Q_NULLPTR));
-        m_closeToTrayAction->setText(QApplication::translate("MainWindow", "Close to tray", Q_NULLPTR));
-        m_preferencesAction->setText(QApplication::translate("MainWindow", "Preferences", Q_NULLPTR));
-        m_recentWalletsAction->setText(QApplication::translate("MainWindow", "Recent wallets", Q_NULLPTR));
-        m_exportTrackingKeyAction->setText(QApplication::translate("MainWindow", "Export tracking key", Q_NULLPTR));
+        m_aboutIntensecoinAction->setText(QApplication::translate("MainWindow", "BLOC", nullptr));
+        m_aboutQtAction->setText(QApplication::translate("MainWindow", "About Qt", nullptr));
+        m_backupWalletAction->setText(QApplication::translate("MainWindow", "Backup wallet", nullptr));
+        m_autostartAction->setText(QApplication::translate("MainWindow", "Start on system login", nullptr));
+        m_minimizeToTrayAction->setText(QApplication::translate("MainWindow", "Minimize to tray", nullptr));
+        m_closeToTrayAction->setText(QApplication::translate("MainWindow", "Close to tray", nullptr));
+        m_preferencesAction->setText(QApplication::translate("MainWindow", "Preferences", nullptr));
+        m_recentWalletsAction->setText(QApplication::translate("MainWindow", "Recent wallets", nullptr));
+        m_exportTrackingKeyAction->setText(QApplication::translate("MainWindow", "Export tracking key", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_exportTrackingKeyAction->setToolTip(QApplication::translate("MainWindow", "Export tracking key", Q_NULLPTR));
+        m_exportTrackingKeyAction->setToolTip(QApplication::translate("MainWindow", "Export tracking key", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_importKeyAction->setText(QApplication::translate("MainWindow", "Import key", Q_NULLPTR));
+        m_importKeyAction->setText(QApplication::translate("MainWindow", "Import key", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_importKeyAction->setToolTip(QApplication::translate("MainWindow", "Import key", Q_NULLPTR));
+        m_importKeyAction->setToolTip(QApplication::translate("MainWindow", "Import key", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_communityForumAction->setText(QApplication::translate("MainWindow", "Join us on Telegram", Q_NULLPTR));
-        m_reportIssueAction->setText(QApplication::translate("MainWindow", "BlockChain-Coin.net official website", Q_NULLPTR));
-        m_resetAction->setText(QApplication::translate("MainWindow", "Reset wallet", Q_NULLPTR));
-        m_saveKeysAction->setText(QApplication::translate("MainWindow", "Save wallet keys", Q_NULLPTR));
-        m_exportKeyAction->setText(QApplication::translate("MainWindow", "Export key", Q_NULLPTR));
-		m_exportPrivateKeyAction->setText(QApplication::translate("MainWindow", "Export secret key", Q_NULLPTR));
+        m_communityForumAction->setText(QApplication::translate("MainWindow", "Join us on Telegram", nullptr));
+        m_reportIssueAction->setText(QApplication::translate("MainWindow", "BLOC.money official website", nullptr));
+        m_resetAction->setText(QApplication::translate("MainWindow", "Reset wallet", nullptr));
+        m_saveKeysAction->setText(QApplication::translate("MainWindow", "Save wallet keys", nullptr));
+        m_exportKeyAction->setText(QApplication::translate("MainWindow", "Export key", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_exportKeyAction->setToolTip(QApplication::translate("MainWindow", "Export key", Q_NULLPTR));
-		m_exportPrivateKeyAction->setToolTip(QApplication::translate("MainWindow", "Export secret key", Q_NULLPTR));
+        m_exportKeyAction->setToolTip(QApplication::translate("MainWindow", "Export key", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_removePendingTxAction->setText(QApplication::translate("MainWindow", "Remove pending TXs", Q_NULLPTR));
+        m_removePendingTxAction->setText(QApplication::translate("MainWindow", "Remove pending TXs", nullptr));
         m_logoLabel->setText(QString());
-        m_noWalletLabel->setText(QApplication::translate("MainWindow", "No active wallet", Q_NULLPTR));
-        m_walletLabel->setText(QApplication::translate("MainWindow", "Your wallet:", Q_NULLPTR));
+        m_noWalletLabel->setText(QApplication::translate("MainWindow", "No active wallet", nullptr));
+        m_walletLabel->setText(QApplication::translate("MainWindow", "Your wallet:", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_addressLabel->setToolTip(QApplication::translate("MainWindow", "Click to copy", Q_NULLPTR));
+        m_addressLabel->setToolTip(QApplication::translate("MainWindow", "Click to copy", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_addressLabel->setText(QApplication::translate("MainWindow", "ADDRESS", Q_NULLPTR));
+        m_addressLabel->setText(QApplication::translate("MainWindow", "ADDRESS", nullptr));
         m_notEncryptedIconLabel->setText(QString());
-        m_notEncryptedTextLabel->setText(QApplication::translate("MainWindow", "Wallet not encrypted!", Q_NULLPTR));
-        m_encryptButton->setText(QApplication::translate("MainWindow", "Set password", Q_NULLPTR));
-        m_copyAddressButton->setText(QApplication::translate("MainWindow", "Copy address", Q_NULLPTR));
-        m_copyAddressLabel->setText(QApplication::translate("MainWindow", "Address copied to clipboard", Q_NULLPTR));
-        m_balanceTextLabel->setText(QApplication::translate("MainWindow", "Total balance", Q_NULLPTR));
+        m_notEncryptedTextLabel->setText(QApplication::translate("MainWindow", "Wallet not encrypted!", nullptr));
+        m_encryptButton->setText(QApplication::translate("MainWindow", "Set password", nullptr));
+        m_copyAddressButton->setText(QApplication::translate("MainWindow", "Copy address", nullptr));
+        m_copyAddressLabel->setText(QApplication::translate("MainWindow", "Address copied to clipboard", nullptr));
+        m_balanceTextLabel->setText(QApplication::translate("MainWindow", "Total balance", nullptr));
 #ifndef QT_NO_TOOLTIP
-        m_balanceLabel->setToolTip(QApplication::translate("MainWindow", "Click to copy", Q_NULLPTR));
+        m_balanceLabel->setToolTip(QApplication::translate("MainWindow", "Click to copy", nullptr));
 #endif // QT_NO_TOOLTIP
-        m_balanceLabel->setText(QApplication::translate("MainWindow", "0.00", Q_NULLPTR));
-        m_balanceCopyLabel->setText(QApplication::translate("MainWindow", "Copied!", Q_NULLPTR));
+        m_balanceLabel->setText(QApplication::translate("MainWindow", "0.00", nullptr));
+        m_balanceCopyLabel->setText(QApplication::translate("MainWindow", "Copied!", nullptr));
         m_balanceIconLabel->setText(QString());
-        m_overviewButton->setText(QApplication::translate("MainWindow", "OVERVIEW", Q_NULLPTR));
-        m_sendButton->setText(QApplication::translate("MainWindow", "SEND BLOCKCHAIN-COINS", Q_NULLPTR));
-        m_transactionsButton->setText(QApplication::translate("MainWindow", "TRANSACTIONS", Q_NULLPTR));
-        m_blockExplorerButton->setText(QApplication::translate("MainWindow", "BLOCK EXPLORER", Q_NULLPTR));
-        m_addressBookButton->setText(QApplication::translate("MainWindow", "CONTACTS", Q_NULLPTR));
-        m_miningButton->setText(QApplication::translate("MainWindow", "MINING", Q_NULLPTR));
-        menuFile->setTitle(QApplication::translate("MainWindow", "File", Q_NULLPTR));
-        menuSettings->setTitle(QApplication::translate("MainWindow", "Settings", Q_NULLPTR));
-        menuThemes->setTitle(QApplication::translate("MainWindow", "Themes", Q_NULLPTR));
-        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
+        m_overviewButton->setText(QApplication::translate("MainWindow", "OVERVIEW", nullptr));
+        m_sendButton->setText(QApplication::translate("MainWindow", "SEND BLOC", nullptr));
+        m_transactionsButton->setText(QApplication::translate("MainWindow", "TRANSACTIONS", nullptr));
+        m_blockExplorerButton->setText(QApplication::translate("MainWindow", "BLOCK EXPLORER", nullptr));
+        m_addressBookButton->setText(QApplication::translate("MainWindow", "CONTACTS", nullptr));
+        m_miningButton->setText(QApplication::translate("MainWindow", "MINING", nullptr));
+        menuFile->setTitle(QApplication::translate("MainWindow", "File", nullptr));
+        menuSettings->setTitle(QApplication::translate("MainWindow", "Settings", nullptr));
+        menuThemes->setTitle(QApplication::translate("MainWindow", "Themes", nullptr));
+        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", nullptr));
     } // retranslateUi
 
 };

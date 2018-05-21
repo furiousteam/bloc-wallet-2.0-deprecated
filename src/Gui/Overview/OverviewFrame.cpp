@@ -40,10 +40,11 @@ namespace {
 const char OVERVIEW_STYLE_SHEET_TEMPLATE[] =
   "* {"
     "font-family: %fontFamily%;"
+    "color: #ffffff;"
   "}"
 
   "WalletGui--OverviewFrame {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "border: none;"
   "}"
 

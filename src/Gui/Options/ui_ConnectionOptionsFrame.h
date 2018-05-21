@@ -281,16 +281,16 @@ public:
     {
         ConnectionOptionsFrame->setWindowTitle(QApplication::translate("ConnectionOptionsFrame", "Frame", 0));
         m_autoRadio->setText(QApplication::translate("ConnectionOptionsFrame", "Auto selection", 0));
-        m_autoHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to local BlockChain-Coin daemon process on port 2082. In case of no local daemon running it will use an in-wallet embedded node implementation.", 0));
+        m_autoHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to local BLOC daemon process on port 2082. In case of no local daemon running it will use an in-wallet embedded node implementation.", 0));
         m_embeddedRadio->setText(QApplication::translate("ConnectionOptionsFrame", "Embedded", 0));
-        m_embeddedHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "An in-wallet embedded BlockChain-Coin node will be used.", 0));
+        m_embeddedHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "An in-wallet embedded BLOC node will be used.", 0));
         m_localRadio->setText(QApplication::translate("ConnectionOptionsFrame", "Local daemon", 0));
         label->setText(QApplication::translate("ConnectionOptionsFrame", "Port:", 0));
-        m_localHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to local BlockChain-Coin daemon process. Please specify daemon's port.", 0));
+        m_localHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to local BLOC daemon process. Please specify daemon's port.", 0));
         m_remoteRadio->setText(QApplication::translate("ConnectionOptionsFrame", "Remote daemon", 0));
         label_2->setText(QApplication::translate("ConnectionOptionsFrame", "Host:", 0));
         label_3->setText(QApplication::translate("ConnectionOptionsFrame", "Port:", 0));
-        m_remoteHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to BlockChain-Coin node running on another PC in the local or global network. Please specify IP address or domain name and the port.", 0));
+        m_remoteHelperLabel->setText(QApplication::translate("ConnectionOptionsFrame", "Wallet will connect to BLOC node running on another PC in the local or global network. Please specify IP address or domain name and the port.", 0));
     } // retranslateUi
 
 };

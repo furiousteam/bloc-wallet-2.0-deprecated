@@ -46,7 +46,7 @@ namespace {
 
 const char TRANSACTIONS_FRAME_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--TransactionsFrame {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "border: none;"
   "}"
 

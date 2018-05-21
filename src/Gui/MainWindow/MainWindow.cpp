@@ -60,8 +60,8 @@ namespace WalletGui {
 namespace {
 
 const int MAX_RECENT_WALLET_COUNT = 10;
-const char COMMUNITY_FORUM_URL[] = "https://t.me/joinchat/HFvEHRJ7BqK6Ls-3Tckuhg";
-const char REPORT_ISSUE_URL[] = "http://blockchain-coin.net";
+const char COMMUNITY_FORUM_URL[] = "https://t.me/bloc_money_channel";
+const char REPORT_ISSUE_URL[] = "http://bloc.money";
 
 const char DONATION_URL_DONATION_TAG[] = "donation";
 const char DONATION_URL_LABEL_TAG[] = "label";
@@ -115,7 +115,7 @@ MainWindow::MainWindow(ICryptoNoteAdapter* _cryptoNoteAdapter, IAddressBookManag
   m_addRecipientAction(new QAction(this)), m_styleSheetTemplate(_styleSheetTemplate), m_walletStateMapper(new QDataWidgetMapper(this)),
   m_syncMovie(new QMovie(Settings::instance().getCurrentStyle().getWalletSyncGifFile(), QByteArray(), this)) {
   m_ui->setupUi(this);
-  setWindowTitle(tr("BlockChain-Coin Wallet %1").arg(Settings::instance().getVersion()));
+  setWindowTitle(tr("BLOC Wallet %1").arg(Settings::instance().getVersion()));
   m_addRecipientAction->setObjectName("m_addRecipientAction");
   m_cryptoNoteAdapter->addObserver(this);
   m_cryptoNoteAdapter->getNodeAdapter()->getWalletAdapter()->addObserver(this);
@@ -367,6 +367,7 @@ void MainWindow::setOpenedState() {
   for (const auto& button : toolButtons) {
     button->setChecked(false);
     button->setEnabled(true);
+    button->setStyleSheet("QPushButton:checked{color: white}");
   }
 
   IWalletAdapter* walletAdapter = m_cryptoNoteAdapter->getNodeAdapter()->getWalletAdapter();
@@ -388,6 +389,7 @@ void MainWindow::setClosedState() {
   for (const auto& button : toolButtons) {
     button->setChecked(false);
     button->setEnabled(false);
+    button->setStyleSheet("QPushButton:checked{color: white}");
   }
 
   m_ui->m_backupWalletAction->setEnabled(false);

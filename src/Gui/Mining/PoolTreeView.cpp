@@ -37,17 +37,17 @@ const char POOL_TREE_VIEW_STYLE_SHEET_TEMPLATE[] =
 
   "WalletGui--PoolTreeView::item:alternate:selected {"
     "color: %fontColorGray%;"
-    "background: #ffffff;"
+    "background: #031b46;"
   "}"
 
   "WalletGui--PoolTreeView::item:!selected {"
-    "color: #000000;"
+    "color: #FFFFFF;"
     "background: %backgroundColorAlternate%;"
   "}"
 
   "WalletGui--PoolTreeView::item:alternate:!selected {"
-    "color: #000000;"
-    "background: #ffffff;"
+    "color: #FFFFFF;"
+    "background: #031b46;"
   "}";
 
 class CursorManager {

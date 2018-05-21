@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BLOC Wallet
+Comment=BLOC wallet
+Exec=BLOC %U
+Terminal=false
+Type=Application
+Icon=bloc
+MimeType=x-scheme-handler/bloc;
+Categories=Office;Finance;

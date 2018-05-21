@@ -37,6 +37,7 @@ namespace {
 const char TRANSACTION_DETAILS_DIALOG_STYLE_SHEET_TEMPLATE[] =
   "* {"
     "font-family: %fontFamily%;"
+    "background-color: #031b46;"
   "}"
 
   "WalletGui--TransactionDetailsDialog {"
@@ -86,6 +87,8 @@ const char TRANSACTION_DETAILS_DIALOG_STYLE_SHEET_TEMPLATE[] =
 
   "WalletGui--TransactionDetailsDialog > #m_transactionDetailsTabBar QTabBar::tab {"
     "font-size: %fontSizeLarge%;"
+    "font-color: #FFFFFF;"
+   "color: #FFFFFF;"
     "font-weight: bold;"
     "min-width: 300px;"
     "max-width: 300px;"
@@ -99,9 +102,9 @@ const char TRANSACTION_DETAILS_DIALOG_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--TransactionDetailsDialog > #m_transactionDetailsTabBar QTabBar::tab:selected {"
-    "background: #ffffff;"
+    "background: #031b46;"
     "border: 1px solid %borderColorDark%;"
-    "border-bottom: 1px solid #ffffff;"
+    "border-bottom: 1px solid #031b46;"
   "}"
 
   "WalletGui--TransactionDetailsDialog > #m_transactionDetailsTabBar QTabBar::tab:!selected {"
@@ -111,7 +114,7 @@ const char TRANSACTION_DETAILS_DIALOG_STYLE_SHEET_TEMPLATE[] =
 
   "WalletGui--TransactionDetailsDialog #m_transactionTab,"
   "WalletGui--TransactionDetailsDialog #m_transfersTab {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "border: none;"
   "}";
 

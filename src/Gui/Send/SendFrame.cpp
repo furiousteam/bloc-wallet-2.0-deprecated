@@ -42,7 +42,7 @@ namespace {
 
 const char SEND_FRAME_STYLE_SHEET[] =
   "WalletGui--SendFrame {"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
     "border: none;"
   "}"
 

@@ -49,7 +49,7 @@ const char WALLET_TEXT_LABEL_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--WalletSmallBlackTextLabel {"
-    "color: #000000;"
+    "color: #ffffff;"
     "font-size: %fontSizeSmall%;"
   "}"
 
@@ -70,22 +70,22 @@ const char WALLET_TEXT_LABEL_STYLE_SHEET_TEMPLATE[] =
   "}"
 
   "WalletGui--WalletNormalBlackTextLabel {"
-    "color: #000000;"
+    "color: #ffffff;"
     "font-size: %fontSizeNormal%;"
   "}"
 
   "WalletGui--WalletExtraNormalBlackTextLabel {"
-    "color: #000000;"
+    "color: #ffffff;"
     "font-size: %fontSizeExtraNormal%;"
   "}"
 
   "WalletGui--WalletLargeBlackTextLabel {"
-    "color: #000000;"
+    "color: #ffffff;"
     "font-size: %fontSizeLarge%;"
   "}"
 
   "WalletGui--WalletExtraLargeBlackTextLabel {"
-    "color: #000000;"
+    "color: #ffffff;"
     "font-size: %fontSizeExtraLarge%;"
   "}"
 
@@ -93,6 +93,7 @@ const char WALLET_TEXT_LABEL_STYLE_SHEET_TEMPLATE[] =
     "min-height: 17;"
     "font-size: %fontSizeLarge%;"
     "font-weight: bold;"
+	"color: #ffffff;"
   "}";
 
 }

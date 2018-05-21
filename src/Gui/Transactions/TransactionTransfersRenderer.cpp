@@ -39,6 +39,7 @@ const QString STYLE_SHEET_TEMPLATE =
   "WalletGui--TransactionTransfersRenderer QTreeView {"
     "background: transparent;"
     "font-size: %fontSizeSmall%;"
+	"color: #ffffff;"
   "}"
 
   "WalletGui--TransactionTransfersRenderer QTreeView::item {"

@@ -48,7 +48,7 @@ QString Style::fontColorGray() const {
 }
 
 QString Style::fontColorGreen() const {
-  return "#04be71";
+  return "#00ff00";
 }
 
 QString Style::fontColorRed() const {
@@ -56,51 +56,51 @@ QString Style::fontColorRed() const {
 }
 
 QString Style::fontColorBlueNormal() const {
-  return "#0580e8";
-}
-
-QString Style::fontColorBlueHover() const {
   return "#005faf";
 }
 
+QString Style::fontColorBlueHover() const {
+  return "#00ffff";
+}
+
 QString Style::fontColorBluePressed() const {
-  return "#0580e8";
+  return "#00ffff";
 }
 
 QString Style::backgroundColorGray() const {
-  return "#f4f4f4";
+  return "#031b46";
 }
 
 QString Style::backgroundButtonColorGrayHover() const {
-  return "#fbfbfb";
+  return "#00ff00";
 }
 
 QString Style::backgroundColorBlueNormal() const {
-  return "#4197d1";
+  return "#2798c7";
 }
 
 QString Style::backgroundColorBlueHover() const {
-  return "#3dacf1";
+  return "#040727";
 }
 
 QString Style::backgroundColorBluePressed() const {
-  return "#4197d1";
+  return "#00ffff";
 }
 
 QString Style::backgroundColorBlueDisabled() const {
-  return "#7f4197d1";
+  return "#031b46";
 }
 
 QString Style::backgroundColorGrayNormal() const {
-  return "#9e9e9e";
+  return "#031b46";
 }
 
 QString Style::backgroundColorGrayHover() const {
-  return "#a8a8a8";
+  return "#031b46";
 }
 
 QString Style::backgroundColorGrayPressed() const {
-  return "#bfbebe";
+  return "#031b46";
 }
 
 QString Style::backgroundColorGreen() const {
@@ -108,23 +108,23 @@ QString Style::backgroundColorGreen() const {
 }
 
 QString Style::backgroundColorGreenHover() const {
-  return "#56dd9c";
+  return "#009a9a";
 }
 
 QString Style::backgroundColorAlternate() const {
-  return "#f3f4f6";
+  return "#021639";
 }
 
 QString Style::borderColor() const {
-  return "#dddddd";
+  return "#031b46";
 }
 
 QString Style::borderColorDark() const {
-  return "#bbbbbb";
+  return "#0b347d";
 }
 
 QString Style::selectionColor() const {
-  return "#5f9cc7";
+  return "#00ffff";
 }
 
 QString Style::glassColor() const {

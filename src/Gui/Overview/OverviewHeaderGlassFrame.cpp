@@ -30,7 +30,7 @@ namespace {
 const char BALANCES_GLASS_FRAME_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--OverviewHeaderGlassFrame {"
     "border: none;"
-    "background-color: #c8f4f4f4;"
+    "background-color: #c8031b46;"
     "border-right: 1px solid %borderColor%;"
   "}";
 

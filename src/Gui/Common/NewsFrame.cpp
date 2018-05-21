@@ -48,7 +48,7 @@ const char NEWS_FRAME_STYLE_SHEEET_TEMPLATE[] =
     "max-width: 45px;"
     "border: none;"
     "border-left: 1px solid %borderColor%;"
-    "background-color: %headerBackgroundColor%;"
+    "background-color: #031b46;"
   "}"
 
   "WalletGui--NewsFrame #m_scrollFrame QPushButton {"
@@ -74,7 +74,7 @@ const char NEWS_FRAME_STYLE_SHEEET_TEMPLATE[] =
 
 const char TEXT_HTML_TEMPLATE[] =
   "<html><body style=\"font-family:%fontFamily%;font-size:%fontSizeNormal%;\"><p><font color=\"%fontColorGray%\">%1</font>"
-  " <font color=\"black\">%2</font></p></body></html>";
+  " <font color=\"white\">%2</font></p></body></html>";
 
 }
 
