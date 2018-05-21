@@ -10,7 +10,7 @@ git clone https://github.com/furiousteam/blockchain-coin-wallet.git
 
 ```
 git submodule update --init --recursive
-git submodule foreach git pull origin zvetachanges
+git submodule foreach git pull origin master
 ```
 
 **3. Build**
