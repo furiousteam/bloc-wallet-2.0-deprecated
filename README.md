@@ -124,6 +124,7 @@ BLOC needs [CMake](https://cmake.org/) 2.8.6 or later as well as [Boost](https:/
 ```
 sudo apt install cmake
 sudo apt install qt-sdk
+sudo apt install qt5-default
 sudo apt install libboost-all-dev
 ```
 
