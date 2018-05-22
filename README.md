@@ -119,17 +119,29 @@ If you are building on an older processor without AVX support, add the following
 
 ### *nix instructions
 
-```
-mkdir build && cd build && cmake -DSTATIC=1 .. && make
-```
-
-To create a portable build (AppImage), use linuxdeployqt:
+BLOC needs [CMake](https://cmake.org/) 2.8.6 or later as well as [Boost](https://www.boost.org/) 1.55 and Qt:
 
 ```
-cp src/intensecoinwallet.desktop build/
-cp src/images/intensecoin.png build/
+sudo apt install cmake
+sudo apt install qt-sdk
+sudo apt install libboost-all-dev
+```
+
+```
+rm -Rf build && mkdir build && cd build
+cmake -DSTATIC=1 \
+-DBOOST_ROOT=/usr/include/boost \
+-DBOOST_LIBRARYDIR=/usr/lib/x86_64-linux-gnu \
+-DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake .. && make
+```
+
+To create a portable build (AppImage), use `linuxdeployqt`:
+
+```
+cp src/blocwallet.desktop build/
+cp src/images/bloc.png build/
 cd build
-linuxdeployqt.AppImage intensecoinwallet.desktop -appimage -verbose=2 -always-overwrite -no-translations
+linuxdeployqt.AppImage blocwallet.desktop -appimage -verbose=2 -no-translations
 ```
 
 ## Download
