@@ -66,11 +66,11 @@ const char OPTION_PRIVACY_NEWS_ENABLED[] = "newsEnabled";
 
 const char DEFAULT_WALLET_FILE_NAME[] = "bloc.wallet";
 const quint64 DEFAULT_OPTIMIZATION_PERIOD = 1000 * 60 * 30; // 30 minutes
-const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 10000000000000;
-const quint64 DEFAULT_OPTIMIZATION_MIXIN = 6;
+const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 1000000;
+const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 4;
+const quint64 VERSION_MINOR = 5;
 const quint64 VERSION_PATCH = 1;
 
 }
@@ -111,10 +111,6 @@ void Settings::init() {
   if (cfgFile.open(QIODevice::ReadOnly)) {
     m_settings = QJsonDocument::fromJson(cfgFile.readAll()).object();
     cfgFile.close();
-  }
-
-  if (isOptimizationEnabled()) {
-	  setOptimizationEnabled(false);
   }
 
   restoreDefaultPoolList();
@@ -261,7 +257,7 @@ ConnectionMethod Settings::getConnectionMethod() const {
 bool Settings::isOptimizationEnabled() const {
   QReadLocker lock(&m_lock);
   if (!m_settings.contains(OPTION_WALLET_OPTIMIZATION)) {
-    return false;
+    return true;
   }
 
   QJsonObject optimizationObject = m_settings.value(OPTION_WALLET_OPTIMIZATION).toObject();
