@@ -69,7 +69,7 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QCheckBox" name="m_newsCheck">
+       <widget class="WalletGui::WalletGrayCheckBox" name="m_newsCheck">
         <property name="text">
          <string>I want to see BLOC News feeds</string>
         </property>

@@ -38,7 +38,7 @@
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QCheckBox" name="m_enableOptimizationCheck">
+      <widget class="WalletGui::WalletGrayCheckBox" name="m_enableOptimizationCheck">
        <property name="text">
         <string>Run background wallet optimization</string>
        </property>
@@ -323,7 +323,7 @@
             </widget>
            </item>
            <item row="6" column="0" colspan="4">
-            <widget class="QCheckBox" name="m_optimizationTimeCheck">
+            <widget class="WalletGui::WalletGrayCheckBox" name="m_optimizationTimeCheck">
              <property name="text">
               <string>Specific time for optimization transactions</string>
              </property>
@@ -437,7 +437,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="m_showFusionTransactionsCheck">
+         <widget class="WalletGui::WalletGrayCheckBox" name="m_showFusionTransactionsCheck">
           <property name="enabled">
            <bool>true</bool>
           </property>

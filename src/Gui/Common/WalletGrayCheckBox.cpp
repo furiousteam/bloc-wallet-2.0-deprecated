@@ -29,7 +29,47 @@ const char GRAY_CHECK_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--WalletGrayCheckBox {"
     "color: %fontColorGray%;"
     "font-size: %fontSizeNormal%;"
-    "border: none;"
+    "background-color: #031b46;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator {"
+    "width: 13px;"
+    "height: 13px;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:unchecked {"
+    "border: 1px solid %borderColorDark%;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:unchecked:hover {"
+    "border: 1px solid %borderColorDark%;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:unchecked:pressed {"
+    "border: 1px solid %borderColorDark%;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:checked {"
+    "border: 1px solid %borderColorDark%;"
+    "background-color: white;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:checked:hover {"
+    "border: 1px solid %borderColorDark%;"
+    "background-color: white;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:checked:pressed {"
+    "border: 1px solid %borderColorDark%;"
+    "background-color: white;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:indeterminate:hover {"
+    "border: 1px solid %borderColorDark%;"
+  "}"
+
+  "WalletGui--WalletGrayCheckBox::indicator:indeterminate:pressed {"
+    "border: 1px solid %borderColorDark%;"
   "}";
 
 WalletGrayCheckBox::WalletGrayCheckBox(QWidget *parent) : QCheckBox(parent) {

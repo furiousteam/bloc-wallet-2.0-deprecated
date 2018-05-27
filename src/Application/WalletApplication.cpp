@@ -263,7 +263,7 @@ bool WalletApplication::initCryptoNoteAdapter() {
       okButton->setText(QObject::tr("Ok"));
       dlg.addButton(okButton, QMessageBox::AcceptRole);
       dlg.setText(QObject::tr("The database is currently used by another application or service.\n"
-      "If you have blockchaincoind with non-default RPC port, you should terminate it and relaunch Blockchain-coinWallet\n"
+      "If you have BLOCd with non-default RPC port, you should terminate it and relaunch Blockchain-coinWallet\n"
       "or\n"
       "Set the Local deamon required port in Blockchain-coinWallet Menu/Preferences/Connection settings."));
 	  if (m_splash != nullptr)

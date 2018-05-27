@@ -33,14 +33,14 @@ namespace WalletGui {
 namespace {
 
 const int MIN_THRESHOLD_ORDER_VALUE = 0;
-const int MAX_THRESHOLD_ORDER_VALUE = 6;
+const int MAX_THRESHOLD_ORDER_VALUE = 4;
 const int MIN_MIXIN_VALUE = 0;
 const int MAX_MIXIN_VALUE = 5;
 const quint64 MINUTE_MSECS = 1000 * 60;
 const quint64 HOUR_MSECS = MINUTE_MSECS * 60;
 const char OPTIMIZATION_OPTIONS_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--OptimizationOptionsFrame {"
-    "background: #ffffff;"
+    "background: #031b46;"
   "}"
 
   "WalletGui--OptimizationOptionsFrame QTimeEdit,"
@@ -86,7 +86,7 @@ OptimizationOptionsFrame::~OptimizationOptionsFrame() {
 
 void OptimizationOptionsFrame::load() {
   Q_ASSERT(m_optimizationManager != nullptr);
-  m_ui->m_enableOptimizationCheck->setDisabled(true);
+  m_ui->m_enableOptimizationCheck->setDisabled(false);
   m_ui->m_enableOptimizationCheck->setChecked(m_optimizationManager->isOptimizationEnabled());
   m_ui->m_optimizationTimeCheck->setChecked(m_optimizationManager->isOptimizationTimeSetManually());
   m_ui->m_startTimeEdit->setTime(m_optimizationManager->getOptimizationStartTime());

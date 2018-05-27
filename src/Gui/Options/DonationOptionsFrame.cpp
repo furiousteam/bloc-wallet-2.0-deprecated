@@ -33,7 +33,7 @@ namespace {
 
 const char DONATION_OPTIONS_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--DonationOptionsFrame {"
-    "background: #ffffff;"
+    "background: #031b46;"
   "}"
 
   "WalletGui--DonationOptionsFrame QSpinBox,"

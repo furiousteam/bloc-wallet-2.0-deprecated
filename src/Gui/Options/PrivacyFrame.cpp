@@ -27,7 +27,7 @@ namespace {
 const char PRIVACY_FRAME_STYLE_SHEET_TEMPLATE[] =
   "WalletGui--PrivacyFrame {"
     "border: none;"
-    "background-color: #ffffff;"
+    "background-color: #031b46;"
   "}"
 
   "WalletGui--PrivacyFrame QCheckBox {"
@@ -37,6 +37,7 @@ const char PRIVACY_FRAME_STYLE_SHEET_TEMPLATE[] =
   "}";
 
 }
+
 
 PrivacyFrame::PrivacyFrame(QWidget* _parent) : QFrame(_parent), m_ui(new Ui::PrivacyFrame) {
   m_ui->setupUi(this);

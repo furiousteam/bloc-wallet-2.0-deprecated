@@ -33,9 +33,9 @@ namespace WalletGui {
 
 namespace {
 
-const char BLOG_RSS_SCHEME[] = "http";
-const char BLOG_RSS_HOST[] = "feeds.feedburner.com";
-const char BLOG_RSS_PATH[] = "/blockchaincoinnet/";
+const char BLOG_RSS_SCHEME[] = "https";
+const char BLOG_RSS_HOST[] = "medium.com";
+const char BLOG_RSS_PATH[] = "/feed/@bloc.money";
 
 const char BLOG_RSS_ID_TAG_NAME[] = "id";
 const char BLOG_RSS_LINK_TAG_NAME[] = "link";

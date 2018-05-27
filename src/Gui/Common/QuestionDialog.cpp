@@ -26,6 +26,7 @@ QuestionDialog::QuestionDialog(const QString& _title, const QString& _text, QWid
   m_ui->setupUi(this);
   setWindowTitle(_title);
   m_ui->m_questionLabel->setText(_text);
+  m_ui->m_questionLabel->setStyleSheet("QLabel { color : white; }");
 }
 
 QuestionDialog::~QuestionDialog() {

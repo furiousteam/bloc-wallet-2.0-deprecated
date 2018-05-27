@@ -1,19 +1,18 @@
 /********************************************************************************
 ** Form generated from reading UI file 'OptimizationOptionsFrame.ui'
 **
-** Created by: Qt User Interface Compiler version 5.5.1
+** Created by: Qt User Interface Compiler version 5.10.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_OPTIMIZATIONOPTIONSFRAME_H
-#define UI_OPTIMIZATIONOPTIONSFRAME_H
+#ifndef OPTIMIZATIONOPTIONSFRAME_H
+#define OPTIMIZATIONOPTIONSFRAME_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
@@ -26,6 +25,7 @@
 #include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "Gui/Common/WalletGrayCheckBox.h"
 #include "Gui/Common/WalletTextLabel.h"
 
 QT_BEGIN_NAMESPACE
@@ -35,7 +35,7 @@ class Ui_OptimizationOptionsFrame
 public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_2;
-    QCheckBox *m_enableOptimizationCheck;
+    WalletGui::WalletGrayCheckBox *m_enableOptimizationCheck;
     WalletGui::WalletNormalGrayTextLabel *label_8;
     QSpacerItem *horizontalSpacer;
     QSpacerItem *verticalSpacer_2;
@@ -64,7 +64,7 @@ public:
     QTimeEdit *m_startTimeEdit;
     WalletGui::WalletNormalBlackTextLabel *label_3;
     QTimeEdit *m_stopTimeEdit;
-    QCheckBox *m_optimizationTimeCheck;
+    WalletGui::WalletGrayCheckBox *m_optimizationTimeCheck;
     QFrame *line_2;
     WalletGui::WalletNormalBlackTextLabel *label_4;
     QSpacerItem *verticalSpacer_8;
@@ -73,7 +73,7 @@ public:
     QSpacerItem *verticalSpacer_5;
     QSpacerItem *verticalSpacer_7;
     QSpacerItem *verticalSpacer_10;
-    QCheckBox *m_showFusionTransactionsCheck;
+    WalletGui::WalletGrayCheckBox *m_showFusionTransactionsCheck;
     QSpacerItem *verticalSpacer_11;
     WalletGui::WalletExtraNormalGrayTextLabel *m_helpLabel;
     QSpacerItem *verticalSpacer;
@@ -91,7 +91,7 @@ public:
         verticalLayout->setContentsMargins(25, 35, 25, 0);
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        m_enableOptimizationCheck = new QCheckBox(OptimizationOptionsFrame);
+        m_enableOptimizationCheck = new WalletGui::WalletGrayCheckBox(OptimizationOptionsFrame);
         m_enableOptimizationCheck->setObjectName(QStringLiteral("m_enableOptimizationCheck"));
 
         horizontalLayout_2->addWidget(m_enableOptimizationCheck);
@@ -241,7 +241,7 @@ public:
 
         gridLayout_2->addWidget(m_stopTimeEdit, 8, 3, 1, 1);
 
-        m_optimizationTimeCheck = new QCheckBox(widget2);
+        m_optimizationTimeCheck = new WalletGui::WalletGrayCheckBox(widget2);
         m_optimizationTimeCheck->setObjectName(QStringLiteral("m_optimizationTimeCheck"));
 
         gridLayout_2->addWidget(m_optimizationTimeCheck, 6, 0, 1, 4);
@@ -289,7 +289,7 @@ public:
 
         verticalLayout_3->addWidget(widget2);
 
-        m_showFusionTransactionsCheck = new QCheckBox(m_optimizationOptionsWidget);
+        m_showFusionTransactionsCheck = new WalletGui::WalletGrayCheckBox(m_optimizationOptionsWidget);
         m_showFusionTransactionsCheck->setObjectName(QStringLiteral("m_showFusionTransactionsCheck"));
         m_showFusionTransactionsCheck->setEnabled(true);
 
@@ -331,22 +331,22 @@ public:
 
     void retranslateUi(QFrame *OptimizationOptionsFrame)
     {
-        OptimizationOptionsFrame->setWindowTitle(QApplication::translate("OptimizationOptionsFrame", "Frame", 0));
-        m_enableOptimizationCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Run background wallet optimization", 0));
-        label_8->setText(QApplication::translate("OptimizationOptionsFrame", "(DISABLED)", 0));
-        label_5->setText(QApplication::translate("OptimizationOptionsFrame", "Optimization target", 0));
-        label_7->setText(QApplication::translate("OptimizationOptionsFrame", "Anonymity level", 0));
-        m_nonOptimizedOutputsLabel->setText(QApplication::translate("OptimizationOptionsFrame", "0", 0));
-        m_nonOptimizedOutputsTextLabel->setText(QApplication::translate("OptimizationOptionsFrame", "outputs below selected target", 0));
-        label_2->setText(QApplication::translate("OptimizationOptionsFrame", "From", 0));
-        m_startTimeEdit->setDisplayFormat(QApplication::translate("OptimizationOptionsFrame", "HH:mm", 0));
-        label_3->setText(QApplication::translate("OptimizationOptionsFrame", "To", 0));
-        m_stopTimeEdit->setDisplayFormat(QApplication::translate("OptimizationOptionsFrame", "HH:mm", 0));
-        m_optimizationTimeCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Specific time for optimization transactions", 0));
-        label_4->setText(QApplication::translate("OptimizationOptionsFrame", "Send optimization transactions each", 0));
-        m_showFusionTransactionsCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Show optimization transactions", 0));
+        OptimizationOptionsFrame->setWindowTitle(QApplication::translate("OptimizationOptionsFrame", "Frame", nullptr));
+        m_enableOptimizationCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Run background wallet optimization", nullptr));
+        label_8->setText(QApplication::translate("OptimizationOptionsFrame", "(Recommended)", nullptr));
+        label_5->setText(QApplication::translate("OptimizationOptionsFrame", "Optimization target", nullptr));
+        label_7->setText(QApplication::translate("OptimizationOptionsFrame", "Anonymity level", nullptr));
+        m_nonOptimizedOutputsLabel->setText(QApplication::translate("OptimizationOptionsFrame", "0", nullptr));
+        m_nonOptimizedOutputsTextLabel->setText(QApplication::translate("OptimizationOptionsFrame", "outputs below selected target", nullptr));
+        label_2->setText(QApplication::translate("OptimizationOptionsFrame", "From", nullptr));
+        m_startTimeEdit->setDisplayFormat(QApplication::translate("OptimizationOptionsFrame", "HH:mm", nullptr));
+        label_3->setText(QApplication::translate("OptimizationOptionsFrame", "To", nullptr));
+        m_stopTimeEdit->setDisplayFormat(QApplication::translate("OptimizationOptionsFrame", "HH:mm", nullptr));
+        m_optimizationTimeCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Specific time for optimization transactions", nullptr));
+        label_4->setText(QApplication::translate("OptimizationOptionsFrame", "Send optimization transactions each", nullptr));
+        m_showFusionTransactionsCheck->setText(QApplication::translate("OptimizationOptionsFrame", "Show optimization transactions", nullptr));
         m_helpLabel->setText(QApplication::translate("OptimizationOptionsFrame", "Wallet optimization is a background task performed in order to aggregate transactions outputs that are below optimization target into bigger ones. It makes it cheaper to send larger amounts of BLOC within one transaction.\n"
-"Wallet optimization is free for all users but takes some time.", 0));
+"Wallet optimization is free for all users but takes some time.", nullptr));
     } // retranslateUi
 
 };
@@ -357,4 +357,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_OPTIMIZATIONOPTIONSFRAME_H
+#endif // OPTIMIZATIONOPTIONSFRAME_H
