@@ -70,8 +70,8 @@ const quint64 DEFAULT_OPTIMIZATION_THRESHOLD = 1000000;
 const quint64 DEFAULT_OPTIMIZATION_MIXIN = 0;
 
 const quint64 VERSION_MAJOR = 1;
-const quint64 VERSION_MINOR = 5;
-const quint64 VERSION_PATCH = 1;
+const quint64 VERSION_MINOR = 6;
+const quint64 VERSION_PATCH = 0;
 
 }
 
