@@ -82,7 +82,7 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-	m_defaultPoolList << "bloc-mining.asia:6666" << "bloc-mining.eu:6666" << "bloc-mining.us:6666";
+	m_defaultPoolList << "bloc-mining.eu:6666" << "bloc-mining.us:6666" << "bloc-mining.asia:6666";
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
