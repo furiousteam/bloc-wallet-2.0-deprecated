@@ -1,4 +1,5 @@
-#Windows compiling of BLOC wallet
+Windows compiling of BLOC wallet
+==================
 
 This is a tested compilation process that you can run yourself. In the end you will have the Windows [BLOC wallet](https://bloc.money) updated to the latest version.
 
