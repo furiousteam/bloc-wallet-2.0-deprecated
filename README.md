@@ -84,6 +84,8 @@ cmake -DSTATIC=1 \
 
 ### Windows instructions
 
+If you want exact steps that were tested to compile the BLOC wallet, [read this](https://github.com/furiousteam/bloc-wallet/blob/master/WINDOWS-COMPILE.md) or else continue reading.
+
 Make sure to install the following dependencies:
 
 * [MS Visual Studio](https://www.visualstudio.com) 2013 or later
